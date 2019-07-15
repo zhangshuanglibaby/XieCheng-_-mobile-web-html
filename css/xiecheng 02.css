@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+i,
+em {
+  font-style: normal;
+}
+img {
+  width: 100%;
+  display: block;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), url('../font/iconfont.woff2') format('woff2'), url('../font/iconfont.woff') format('woff'), url('../font/iconfont.ttf') format('truetype'), url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont";
+}
+/*设置页面宽度*/
+.view {
+  max-width: 540px;
+  min-width: 320px;
+  margin: 5px auto;
+  /* 这是分类开始部分*/
+  /*这是导航栏开始部分*/
+  /*这是特卖汇开始部分*/
+  /*这是热门活动开始部分*/
+  /*这是脚底开始部分*/
+}
+.view .catalog .group {
+  display: flex;
+  height: 90px;
+  background-color: #ff7645;
+  font-size: 14px;
+  color: #fff;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.view .catalog .group > a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.view .catalog .group > a em {
+  width: 45px;
+  height: 35px;
+  background-color: red;
+  background: url('../images/xc_sprites.png') no-repeat;
+  background-size: 104px 327.5px;
+  background-position: 0 -130px;
+}
+.view .catalog .group > a .airticket {
+  background-position: left bottom;
+}
+.view .catalog .group > a .tourticket {
+  background-position: 0 -240px;
+}
+.view .catalog .group .group_info {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+.view .catalog .group .group_info a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-left: 1px solid #ccc;
+}
+.view .catalog .group .group_info a:nth-child(-n+2) {
+  border-bottom: 1px solid #ccc;
+}
+.view .catalog .airplane {
+  background-color: #0099ff;
+}
+.view .catalog .tour {
+  background-color: #00c73b;
+}
+.view .xc_nav {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 0;
+}
+.view .xc_nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  font-size: 13px;
+  padding: 5px 0;
+}
+.view .xc_nav a em {
+  width: 24px;
+  height: 24px;
+  background: url('../images/un_ico_subnav_v7.124@2x.png') no-repeat;
+  background-size: 24px 300px;
+  background-position: 1px 0;
+}
+.view .xc_nav a .insure {
+  background-position: 3px -25px;
+}
+.view .xc_nav a .change {
+  background-position: 5px -55px;
+}
+.view .xc_nav a .shopping {
+  background-position: 2px -276px;
+}
+.view .xc_nav a .guide {
+  background-position: 2px -85px;
+}
+.view .xc_nav a .free {
+  background-position: 5px -140px;
+}
+.view .xc_nav a .fun {
+  background-position: 1px -170px;
+}
+.view .xc_nav a .gift {
+  background-position: 1px -198px;
+}
+.view .xc_nav a .credit {
+  background-position: 1px -223px;
+}
+.view .xc_nav a .more {
+  background-position: 3px -248px;
+}
+.view .hot_sale {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+.view .hot_sale .hot_sale_title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.view .hot_sale .hot_sale_title h4 {
+  font-size: 16px;
+  font-style: italic;
+  color: #ff2442;
+}
+.view .hot_sale .hot_sale_title > a {
+  font-size: 12px;
+  background-color: #ff627e;
+  color: #fff;
+  padding: 1px 8px;
+  border-radius: 10px;
+}
+.view .hot_sale .hot_sale_content {
+  display: flex;
+}
+.view .hot_sale .hot_sale_content .content_lf {
+  flex: 1;
+}
+.view .hot_sale .hot_sale_content .content_lf > a p {
+  font-size: 14px;
+  height: 40px;
+  overflow: hidden;
+}
+.view .hot_sale .hot_sale_content .content_lf .content_lf_price span {
+  color: #ff3e77;
+}
+.view .hot_sale .hot_sale_content .content_lf .content_lf_price em {
+  font-size: 12px;
+  color: #fff;
+  background-color: #ff2041;
+  padding: 0 4px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+.view .hot_sale .hot_sale_content .content_rg {
+  flex: 1;
+}
+.view .hot_sale .hot_sale_content .content_rg .tejia {
+  height: 50%;
+  background: url('../images/pic-tmh-02.png') no-repeat;
+  background-size: 53.5px 71px;
+  background-position: right bottom;
+  padding-top: 20px;
+  padding-left: 10px;
+  background-color: #fafafa;
+  border-bottom: 5px solid #fff;
+}
+.view .hot_sale .hot_sale_content .content_rg .tejia h4 {
+  font-size: 14px;
+  color: #ff2041;
+}
+.view .hot_sale .hot_sale_content .content_rg .tejia p {
+  font-size: 12px;
+}
+.view .hot_sale .hot_sale_content .content_rg .play {
+  height: 50%;
+  display: flex;
+  background-color: #fafafa;
+}
+.view .hot_sale .hot_sale_content .content_rg .play a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  border-left: 5px solid #fff;
+}
+.view .hot_sale .hot_sale_content .content_rg .play a h5 {
+  color: #0bd5bf;
+}
+.view .hot_sale .hot_sale_content .content_rg .play a span {
+  font-size: 12px;
+}
+.view .hot_sale .hot_sale_content .content_rg .play a img {
+  width: 50px;
+}
+.view .hot_activity {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.view .hot_activity .hot_activity_title {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 0 10px;
+}
+.view .hot_activity .hot_activity_title h4 {
+  font-style: italic;
+  color: #ff9f00;
+}
+.view .hot_activity .hot_activity_title > a {
+  font-size: 12px;
+  background-color: #ff688e;
+  color: #fff;
+  padding: 1px 8px;
+  border-radius: 10px;
+}
+.view .hot_activity .hot_activity_content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.view .hot_activity .hot_activity_content a {
+  width: 50%;
+}
+.view .order {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 0;
+}
+.view .order .order_tel {
+  display: flex;
+  justify-content: space-around;
+}
+.view .order .order_tel a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.view .order .order_format {
+  text-align: center;
+}
+.view .order .order_copy {
+  text-align: center;
+}

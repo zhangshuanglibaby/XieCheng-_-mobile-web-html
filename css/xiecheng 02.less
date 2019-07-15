@@ -1,0 +1,266 @@
+// 导入base文档
+@import './xc_base.less';
+
+/*设置页面宽度*/
+.view {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 5px auto;
+    /* 这是分类开始部分*/
+    .catalog {
+        .group {
+            display: flex;
+            height: 90px;
+            background-color: #ff7645;
+            font-size: 14px;
+            color: #fff;
+            margin: 5px 0;
+            border-radius: 5px;
+            >a {
+                flex: 1;
+                display: flex;   
+                flex-direction: column;
+                justify-content: space-around; 
+                align-items: center;            
+                em {
+                    width: 45px;
+                    height: 35px;
+                    background-color: red;
+                    background: url('../images/xc_sprites.png') no-repeat;
+                    background-size: 208px/2 655px/2;
+                    background-position: 0 -260px/2;
+                }
+                .airticket {
+                    background-position: left bottom;
+                }
+                .tourticket {
+                    background-position: 0 -480px/2;
+                }
+            }
+            .group_info {
+                flex: 2;
+                display: flex;
+                flex-wrap: wrap;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50%;
+                    border-left: 1px solid #ccc;
+                    &:nth-child(-n+2) {
+                        border-bottom: 1px solid #ccc;
+                    }
+                }
+            }
+        }
+        .airplane {
+            background-color: #0099ff;
+        }
+        .tour {
+            background-color: #00c73b;
+        }
+    }
+
+
+    /*这是导航栏开始部分*/
+    .xc_nav {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px 0;
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20%;
+            font-size: 13px;
+            padding: 5px 0;
+            em {
+                width: 24px;
+                height: 24px;
+                background: url('../images/un_ico_subnav_v7.124@2x.png') no-repeat;
+                background-size: 48px/2 600px/2;
+                background-position: 1px 0;
+            }
+            .insure {
+                background-position: 3px -50px/2;
+            }
+            .change {
+                background-position: 5px -110px/2;
+            }
+            .shopping {
+                background-position: 2px -552px/2;
+            }
+            .guide {
+                background-position: 2px -170px/2;
+            }
+            .free {
+                background-position: 5px -280px/2;
+            }
+            .fun {
+                background-position: 1px -340px/2;
+            }
+            .gift {
+                background-position: 1px -396px/2;
+            }
+            .credit {
+                background-position: 1px -446px/2;
+            }
+            .more {
+                background-position: 3px -496px/2;
+            }
+        }
+    }
+
+
+    /*这是特卖汇开始部分*/
+    .hot_sale {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 5px 0;
+        .hot_sale_title {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            h4 {
+                font-size: 16px;
+                font-style: italic;
+                color: #ff2442;
+            }
+            >a {
+                font-size: 12px;
+                background-color: #ff627e;
+                color: #fff;
+                padding: 1px 8px;
+                border-radius: 10px;
+            }
+        }
+        .hot_sale_content {
+            display: flex;
+            .content_lf {
+                flex: 1;
+                >a {
+                    p {
+                        font-size: 14px;
+                        height: 40px;
+                        overflow: hidden;
+                    }
+                }
+                .content_lf_price {
+                    span {
+                        color: #ff3e77;
+                    }
+                    em {
+                        font-size: 12px;
+                        color: #fff;
+                        background-color: #ff2041;
+                        padding: 0 4px;
+                        border-radius: 10px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+            .content_rg {
+                flex: 1;
+                .tejia {
+                    height: 50%;
+                    background: url('../images/pic-tmh-02.png') no-repeat;
+                    background-size: 107px/2 142px/2;
+                    background-position: right bottom;
+                    padding-top: 20px;
+                    padding-left: 10px;
+                    background-color: #fafafa;
+                    border-bottom: 5px solid #fff;
+                    h4 {
+                        font-size: 14px;
+                        color: #ff2041;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                }
+                .play {
+                    height: 50%;
+                    display: flex;
+                    background-color: #fafafa;
+                    a {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 50%;
+                        border-left: 5px solid #fff;
+                        h5 {
+                            color: #0bd5bf;
+                        }
+                        span {
+                            font-size: 12px;
+                        }
+                        img {
+                            width: 50px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+
+    /*这是热门活动开始部分*/
+    .hot_activity {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        .hot_activity_title {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 10px 0 10px;
+            h4 {
+                font-style: italic;
+                color: #ff9f00;
+            }
+            >a {
+                font-size: 12px;
+                background-color: #ff688e;
+                color: #fff;
+                padding: 1px 8px;
+                border-radius: 10px;
+            }
+        }
+        .hot_activity_content {
+            display: flex;
+            flex-wrap: wrap;
+            a {
+                width: 50%;
+            }
+        }
+    }
+
+
+    /*这是脚底开始部分*/
+    .order {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px 0;
+        .order_tel {
+            display: flex;
+            justify-content: space-around;
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .order_format {
+            text-align: center;
+        }
+        .order_copy {
+            text-align: center;
+        }
+    }
+
+
+}
